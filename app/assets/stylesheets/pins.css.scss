@@ -1,0 +1,29 @@
+// Place all the styles related to the Pins controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#masonry-container {
+  background: #FFF;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  clear: both;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.clearfix:before, .clearfix:after { content: ""; 
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; 
+	display: inline-block;
+}
+
+.box{margin:5px;width:214px;margin-left: 20px;height:200px;}
+.box img{padding: 20px 20px ;width:213px;}
+.col3 { width: 280px;}
+.col3 img { max-width: 280px; overflow:hidden;}

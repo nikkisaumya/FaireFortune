@@ -1,0 +1,12 @@
+development:
+  adapter: mysql2
+  database: fairefortunedb
+  username: root
+  password: lavelle
+  host: localhost
+production:
+  adapter: mysql2
+  database: fairefortunedb
+  username: root
+  password: lavelle
+  host: localhost
