@@ -9,6 +9,9 @@ def show
 	@pin = Pin.find params[:id]
 end
 
+def profile
+
+end
 
 def new
 	@pin = Pin.new
