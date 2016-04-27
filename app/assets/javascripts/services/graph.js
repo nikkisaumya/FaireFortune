@@ -17,7 +17,7 @@ fortuneGraph.service('Graph', function($rootScope){
           }
       },
       series: [{
-        name: 'Port 2',
+        name: 'Not Satisfied',
         color: 'rgba(223, 83, 83, .5)',
         data: [[161.2, 51.6], [167.5, 59.0], [159.5, 49.2], [157.0, 63.0], [155.8, 53.6],
             [170.0, 59.0], [159.1, 47.6], [166.0, 69.8], [176.2, 66.8], [160.2, 75.2],
@@ -73,7 +73,7 @@ fortuneGraph.service('Graph', function($rootScope){
             [176.5, 71.8], [164.4, 55.5], [160.7, 48.6], [174.0, 66.4], [163.8, 67.3]]
 
       }, {
-        name: 'Port 1',
+        name: 'Satisfied',
         color: 'rgba(119, 152, 191, .5)',
         data: [[174.0, 65.6], [175.3, 71.8], [193.5, 80.7], [186.5, 72.6], [187.2, 78.8],
             [181.5, 74.8], [184.0, 86.4], [184.5, 78.4], [175.0, 62.0], [184.0, 81.6],
@@ -128,7 +128,7 @@ fortuneGraph.service('Graph', function($rootScope){
         }],
       //Title configuration (optional)
       title: {
-         text: 'Faults in network'
+         text: 'Internship Experience'
       },
       //Boolean to control showng loading status on chart (optional)
       //Could be a string if you want to show specific loading text.
@@ -146,7 +146,7 @@ fortuneGraph.service('Graph', function($rootScope){
       },
       yAxis: {
           title: {
-              text: 'Faults Instances'
+              text: 'Internship Experience'
           }
       },
       //Whether to use HighStocks instead of HighCharts (optional). Defaults to false.
@@ -327,7 +327,7 @@ fortuneGraph.service('Graph', function($rootScope){
           }
       },
       title: {
-          text: 'Top Users'
+          text: 'Top Skills'
       },
       subtitle: {
           text: ''
@@ -340,7 +340,7 @@ fortuneGraph.service('Graph', function($rootScope){
       },
       yAxis: {
           title: {
-              text: 'Number of Cloud Ports'
+              text: 'Top 5 Skills in demand'
           }
       },
       legend: {
@@ -353,16 +353,14 @@ fortuneGraph.service('Graph', function($rootScope){
           name: '',
           colorByPoint: true,
           data: [
-              {name: "Pepsi", y: 2,  drilldown: "Chrome"},
-              {name: "Coke", y: 33, drilldown: "Firefox"},
-              {name: "HDFC", y: 13, drilldown: "Firefox"},
-              {name: "Citibank", y: 20, drilldown: "Firefox"},
-              {name: "ITC", y: 30, drilldown: "Firefox"},
+              {name: "HTML", y: 2,  drilldown: "Chrome"},
+              {name: "Python", y: 33, drilldown: "Firefox"},
+              {name: "Content Writing", y: 13, drilldown: "Firefox"},
+              {name: "UI/Ux", y: 20, drilldown: "Firefox"},
+              {name: "Audit", y: 30, drilldown: "Firefox"},
           ]
       }],
-      title: {
-         text: ''
-      },
+      
       loading: false,
       useHighStocks: false,
       func: function (chart) {
@@ -471,11 +469,11 @@ fortuneGraph.service('Graph', function($rootScope){
           },
           plotOptions: {
             pie: {
-                allowPointSelect: true,
+                allowPointSelect: false,
                 center: ['50%', '50%'],
                 cursor: 'pointer',
                 dataLabels: {
-                    enabled: true,
+                    enabled: false,
                     format: '{point.percentage:.0f} %',
                 }
             }
@@ -483,7 +481,7 @@ fortuneGraph.service('Graph', function($rootScope){
       },
       
       series: [{
-         data: [{ name: 'Highly Available', y: 10, color: '#87D37C'}, { name: 'Low Availability', y: 2, sliced: true, selected: true, color: '#E74C3C'}, { name: 'Moderately Available', y: 1, color: '#F39C12' }]
+         data: [{ name: 'Bangalore', y: 10, color: '#87D37C'}, { name: 'Delhi', y: 2, sliced: true, selected: true, color: '#E74C3C'}, { name: 'Mumbai', y: 1, color: '#F39C12' }]
       }],
       title: {
          text: obj.titleText
